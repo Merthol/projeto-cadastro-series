@@ -1,0 +1,15 @@
+C:\Users\guilh\OneDrive\Documentos\Workspace\projeto-cadastro-series\cadastro-series\bin\Debug\net6.0\cadastro-series.exe
+C:\Users\guilh\OneDrive\Documentos\Workspace\projeto-cadastro-series\cadastro-series\bin\Debug\net6.0\cadastro-series.deps.json
+C:\Users\guilh\OneDrive\Documentos\Workspace\projeto-cadastro-series\cadastro-series\bin\Debug\net6.0\cadastro-series.runtimeconfig.json
+C:\Users\guilh\OneDrive\Documentos\Workspace\projeto-cadastro-series\cadastro-series\bin\Debug\net6.0\cadastro-series.dll
+C:\Users\guilh\OneDrive\Documentos\Workspace\projeto-cadastro-series\cadastro-series\bin\Debug\net6.0\cadastro-series.pdb
+C:\Users\guilh\OneDrive\Documentos\Workspace\projeto-cadastro-series\cadastro-series\obj\Debug\net6.0\cadastro-series.csproj.AssemblyReference.cache
+C:\Users\guilh\OneDrive\Documentos\Workspace\projeto-cadastro-series\cadastro-series\obj\Debug\net6.0\cadastro-series.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\guilh\OneDrive\Documentos\Workspace\projeto-cadastro-series\cadastro-series\obj\Debug\net6.0\cadastro-series.AssemblyInfoInputs.cache
+C:\Users\guilh\OneDrive\Documentos\Workspace\projeto-cadastro-series\cadastro-series\obj\Debug\net6.0\cadastro-series.AssemblyInfo.cs
+C:\Users\guilh\OneDrive\Documentos\Workspace\projeto-cadastro-series\cadastro-series\obj\Debug\net6.0\cadastro-series.csproj.CoreCompileInputs.cache
+C:\Users\guilh\OneDrive\Documentos\Workspace\projeto-cadastro-series\cadastro-series\obj\Debug\net6.0\cadastro-series.dll
+C:\Users\guilh\OneDrive\Documentos\Workspace\projeto-cadastro-series\cadastro-series\obj\Debug\net6.0\refint\cadastro-series.dll
+C:\Users\guilh\OneDrive\Documentos\Workspace\projeto-cadastro-series\cadastro-series\obj\Debug\net6.0\cadastro-series.pdb
+C:\Users\guilh\OneDrive\Documentos\Workspace\projeto-cadastro-series\cadastro-series\obj\Debug\net6.0\cadastro-series.genruntimeconfig.cache
+C:\Users\guilh\OneDrive\Documentos\Workspace\projeto-cadastro-series\cadastro-series\obj\Debug\net6.0\ref\cadastro-series.dll
