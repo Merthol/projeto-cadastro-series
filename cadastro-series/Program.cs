@@ -13,7 +13,7 @@ namespace cadastro_series
             WriteLine("DIO Séries - Seja bem vindo!!!");
             do
             {
-                opcaoUsuario = ObterOpcaoUsiario();
+                opcaoUsuario = ObterOpcaoUsuario();
                 switch (opcaoUsuario)
                 {
                     case "1":
@@ -30,19 +30,26 @@ namespace cadastro_series
                         break;
                     case "3":
                         if (AtualizarSeries())
-                            Write("Série atualizada com sucesso.");
+                            WriteLine("Série atualizada com sucesso.");
                         else
-                            Write("ID não encontrado.");
+                            WriteLine("ID não encontrado.");
 
                         WriteLine();
                         WriteLine("Tecle ENTER para continuar.");
                         ReadLine();
                         break;
                     case "4":
-                        //ExcluirSeries();
+                        if (ExcluirSeries())
+                            WriteLine("Série excluída com sucesso.");
+                        else
+                            WriteLine("ID não encontrado.");
+
+                        WriteLine();
+                        WriteLine("Tecle ENTER para continuar.");
+                        ReadLine();
                         break;
                     case "5":
-                        //VisualizarSeries();
+                        VisualizarSeries();
                         break;
                     case "6":
                         Clear();
@@ -53,6 +60,28 @@ namespace cadastro_series
                         break;
                 }
             } while (opcaoUsuario != "X");
+        }
+
+        private static void VisualizarSeries()
+        {
+            Write("Digite o id da série que deseja visualizar: ");
+            int indiceSerie = int.Parse(ReadLine());
+
+            var serie = repositorio.RetornaPorId(indiceSerie);
+
+            WriteLine(serie);
+        }
+
+        private static bool ExcluirSeries()
+        {
+            Write("Digite o id da série que deseja excluir: ");
+            int indiceSerie = int.Parse(ReadLine());
+
+            if (indiceSerie >= repositorio.ProximoId())
+                return false;
+
+            repositorio.Exclui(indiceSerie);
+            return true;
         }
 
         private static bool AtualizarSeries()
@@ -135,11 +164,12 @@ namespace cadastro_series
 
             foreach (var serie in lista)
             {
-                WriteLine("#ID {0}: - {1}", serie.retornaId(), serie.retornaTitulo());
+                var excluido = serie.StatusExcluido();
+                WriteLine("#ID {0}: - {1}{2}", serie.retornaId(), serie.retornaTitulo(), (excluido ? " - *Excluido*" : ""));
             }
         }
 
-        private static string ObterOpcaoUsiario()
+        private static string ObterOpcaoUsuario()
         {
             WriteLine();
             WriteLine("Informe a opção desejada:");

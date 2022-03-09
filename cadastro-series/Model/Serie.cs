@@ -45,5 +45,10 @@ namespace cadastro_series
         {
             this.Excluido = true;
         }
+
+        public bool StatusExcluido()
+        {
+            return this.Excluido;
+        }
     }
 }
